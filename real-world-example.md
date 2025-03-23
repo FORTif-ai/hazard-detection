@@ -1,6 +1,6 @@
 # Real-World Examples of OpenCV Hazard Detection
 
-Detecting obstacles on the floor in real-time is a common need for robotics and safety systems. OpenCV provides simple yet powerful techniques to identify hazards (like objects or debris) in a live video feed. Below we explore real-world uses of OpenCV for hazard detection and provide a sample Python OpenCV code for a basic hazard detection prototype. Finally, we suggest improvements for better accuracy.
+Detecting obstacles on the floor in real-time is a common need for robotics and safety systems. OpenCV provides simple yet powerful techniques to identify hazards (like objects or debris) in a live video feed. Below we explore real-world uses of OpenCV for hazard detection and provide sample Python OpenCV code for a basic hazard detection prototype. Finally, we suggest improvements for better accuracy.
 
 OpenCV is often used in robots to detect floor obstacles and avoid collisions. For example, one hobbyist project used a webcam on a robot to scan for floor hazards: the camera frames were converted to grayscale, blurred, and passed through a Canny edge detector. By scanning upward from the bottom of the edge image, the system could spot where the first edge pixels appeared (indicating an object rising from the floor).  
 [Source 1 – Big Face Robotics Blog](https://bigfacerobotics.wordpress.com/2014/12/18/obstacle-detection-using-opencv/#:~:text=The%20method%20I%20am%20using,as%20anything%20found%20here%20will)
@@ -26,7 +26,7 @@ In these cases, simple image processing allowed the robot to “see” objects o
 
 ### More Complex Edge Detection script (Second One) 
 1. Capture frame from webcam  
-2. Apply **Bilateral filter** to smooth noise while preserving edges  
+2. Apply **Bilateral filter** and **Canny edge detection** to smooth noise while preserving edges  
 3. Convert to grayscale  
 4. Apply **binary thresholding**  
 6. Find contours from the thresholded mask  
