@@ -1,0 +1,45 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.env/
+.venv/
+env/
+venv/
+
+# VSCode / PyCharm
+.vscode/
+.idea/
+
+# macOS specific
+.DS_Store
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Output directories
+results/
+videos/
+*.mp4
+*.avi
+*.mov
+
+# Checkpoints or model weights
+*.ckpt
+*.pth
+*.pt
+*.h5
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# OS metadata
+Thumbs.db
+ehthumbs.db
+
+# Others
+*.bak
+*.swp
